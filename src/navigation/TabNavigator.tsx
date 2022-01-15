@@ -7,7 +7,7 @@ const TabStack = createBottomTabNavigator<TabParamList>();
 
 export const TabStackNavigator: FC = () => {
   return (
-    <TabStack.Navigator>
+    <TabStack.Navigator screenOptions={{ headerShown: false }}>
       <TabStack.Screen name={TabKeys.Home} component={HomeStackNavigator} />
     </TabStack.Navigator>
   );

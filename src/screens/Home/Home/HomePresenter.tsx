@@ -3,6 +3,6 @@ import { VStack } from 'native-base';
 
 type Props = {};
 
-export const HomeScreen: FC<Props> = () => {
+export const HomePresenter: FC<Props> = () => {
   return <VStack />;
 };

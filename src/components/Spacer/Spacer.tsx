@@ -9,6 +9,7 @@ export const Spacer: FC<{ size: number; horizontal?: boolean }> = ({
 
   return (
     <View
+      testID="spacer"
       style={
         horizontal
           ? { width: px, height: 'auto', flexShrink: 0 }

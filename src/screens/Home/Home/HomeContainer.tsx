@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { HomeScreen } from './HomeScreen';
+import { HomePresenter } from './HomePresenter';
 
 export const HomeContainer: FC = () => {
-  return <HomeScreen />;
+  return <HomePresenter />;
 };
