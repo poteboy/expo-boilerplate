@@ -1,10 +1,4 @@
-import React, {
-  useState,
-  createContext,
-  useContext,
-  useEffect,
-  FC,
-} from 'react';
+import React, { createContext, useContext, FC } from 'react';
 
 type Test = {
   test: any;

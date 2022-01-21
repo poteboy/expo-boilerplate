@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { Spacer } from './Spacer';
 import { NativeBaseProvider } from 'native-base';
 import { render } from '@testing-library/react-native';

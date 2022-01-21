@@ -7,8 +7,15 @@ const HomeStack = createNativeStackNavigator<HomeParamList>();
 
 export const HomeStackNavigator: FC = () => {
   return (
-    <HomeStack.Navigator screenOptions={{ title: 'ホーム' }}>
-      <HomeStack.Screen name={HomeKeys.Home} component={HomeContainer} />
+    <HomeStack.Navigator screenOptions={{ headerShown: true }}>
+      <HomeStack.Screen
+        name={HomeKeys.Home}
+        component={HomeContainer}
+        options={{
+          title: 'ホーム',
+          headerShadowVisible: true,
+        }}
+      />
     </HomeStack.Navigator>
   );
 };

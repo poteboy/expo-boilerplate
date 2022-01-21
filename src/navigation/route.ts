@@ -17,10 +17,12 @@ export const useRootNavigation = () =>
 // TabStack
 export const TabKeys = {
   Home: 'Tab/Home',
+  Settings: 'Tab/Settings',
 } as const;
 
 export type TabParamList = {
   [TabKeys.Home]: undefined;
+  [TabKeys.Settings]: undefined;
 };
 
 export const useTabNavigation = () =>
