@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacer renders correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+>
+  <RNCSafeAreaProvider
+    onInsetsChange={[Function]}
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNCSafeAreaProvider
+      onInsetsChange={[Function]}
+      style={
+        Array [
+          Object {
+            "flex": 1,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        dataSet={Object {}}
+        style={
+          Array [
+            Object {},
+            Object {
+              "flexShrink": 0,
+              "height": 0,
+              "width": "auto",
+            },
+          ]
+        }
+        testID="spacer"
+      />
+    </RNCSafeAreaProvider>
+  </RNCSafeAreaProvider>
+</RNCSafeAreaProvider>
+`;

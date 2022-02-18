@@ -1,2 +1,2 @@
-export * from './testing-library';
+export * from './test';
 export * from './validation';

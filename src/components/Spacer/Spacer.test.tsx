@@ -1,18 +1,17 @@
 import React from 'react';
 import { Spacer } from './Spacer';
 import { NativeBaseProvider } from 'native-base';
-import { render } from '@testing-library/react-native';
+import { render } from '@src/util';
 
-const size = 20;
-const component = (
-  <NativeBaseProvider>
-    <Spacer size={size} />
-  </NativeBaseProvider>
-);
+describe(`Spacer`, () => {
+  it(`renders correctly`, () => {
+    const { toJSON } = render(<Spacer size={0} />);
+    expect(toJSON()).toMatchSnapshot();
+  });
 
-describe(`<Spacer />`, () => {
-  test(`has a view component`, () => {
-    const { findByTestId } = render(component);
-    expect(findByTestId('spacer')).toBeDefined();
+  it(`has one component`, async () => {
+    const { queryByTestId, queryAllByTestId } = render(<Spacer size={0} />);
+    expect(queryByTestId('spacer')).toBeTruthy();
+    expect(queryAllByTestId('spacer')).toHaveLength(1);
   });
 });
