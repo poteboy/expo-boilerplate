@@ -8,7 +8,8 @@
       "@assets/*": ["assets/*"]
     },
     "strict": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules"]
 }
