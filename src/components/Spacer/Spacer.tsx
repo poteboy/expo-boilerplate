@@ -5,7 +5,7 @@ export const Spacer: FC<{ size: number; horizontal?: boolean }> = ({
   size,
   horizontal,
 }) => {
-  const px = size;
+  const px = size * 4;
 
   return (
     <View
